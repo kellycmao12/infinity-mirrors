@@ -1,0 +1,37 @@
+<!-- https://glitch.com/edit/#!/aframe-threejs-reflector?path=index.html%3A44%3A0 -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Infinity Mirrors</title>
+    <meta name="description" content="Hello, WebVR! - A-Frame" />
+
+    <!-- most recent aframe release -->
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="aframe-mirror.js"></script>
+
+    <!-- p5 core library -->
+  	<script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.js"></script>
+
+  	<!-- AFrameP5 library -->
+  	<script src="https://craignyu.github.io/aframep5/libraries/aframep5-v2.1.js"></script>
+
+  	<!-- Your p5 Sketch -->
+    <script src="sketch.js"></script>
+    
+  </head>
+  <body>
+    <a-scene id="VRScene">
+      <a-assets id="VRAssets">
+        <img src="images/water.jpg" id="water">
+        <img src="images/sand.jpeg" id="sand">
+        <img src="images/sky.jpeg" id="sky">
+        <img src="images/road.jpeg" id="road">
+        <a-asset src="models/koi_fish/scene.gltf" id="koi"></a-asset>
+        <a-asset src="models/coral/scene.gltf" id="coral"></a-asset>
+        <a-asset src="models/taxi/scene.gltf" id="car"></a-asset>
+        <a-asset src="models/hammer/scene.gltf" id="hammer"></a-asset>
+      </a-assets>
+    </a-scene>
+  </body>
+</html>
